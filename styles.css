@@ -18,7 +18,7 @@
 body {
   font-family: "Inter", sans-serif;
   min-height: 100vh;
-  background: #f9f9f9;
+  background: #262626;
   margin: 0;
   /* line-height: 1; */
   font-size: medium;
@@ -40,7 +40,7 @@ img {
 }
 
 /* ############ BUTTONS ############## */
-button.web {
+.web {
   padding: 16px 32px;
   border-radius: 8px;
   background: linear-gradient(to right, #BC8EF8, #3DABBE);
@@ -52,9 +52,9 @@ button.web {
   /* transition: all 0.3s ease; */
 }
 
-button.web:hover {
-  padding: 16px 32px;
-  border-radius: 8px;
+.web:hover {
+  /* padding: 16px 32px;
+  border-radius: 8px; */
   /* background: linear-gradient(to left, #BC8EF8, #3DABBE); */
   background:#1f7fd8;
   color: #fff;
@@ -98,7 +98,7 @@ nav {
   display: flex;
   padding: 20px 120px;
   overflow: hidden;
-  background: #f5f5f5;
+  background: #dbdbdb;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   justify-content: center;
   align-items: center;
@@ -106,7 +106,7 @@ nav {
 
 nav ul {
   display: flex;
-  gap: 40px;
+  gap: 80px;
 }
 
 nav ul li {
@@ -199,7 +199,7 @@ nav ul li a.active {
 }
 
 .PortfolioGrid .PortfolioItem:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 }
 
 .PortfolioGrid .PortfolioItem .PortfolioImage {
@@ -259,6 +259,10 @@ nav ul li a.active {
   background: #404040;
 }
 
+.PortfolioGrid .PortfolioItem:hover {
+  transform: translateY(-8px);
+}
+
 .ExperienceItem .Timeframe {
 font-size: 20px;
 font-weight: 500;
@@ -298,9 +302,149 @@ color: #d4d4d4;
 /*##################### CONTACT SECTION ########################*/
 .ContactPreview {
   background: #262626;
-  padding: 40 px 0;
+  padding: 40px 0;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
+.ContactGrid {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  overflow: wrap;
+}
+
+.ContactForm form {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  /* gap: 8px; */
+}
+
+label {
+  color: #fff;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 16px 24px;
+  margin: 8px 0 24px 0;  
+  border: transparent;
+  border-radius: 4px;
+  resize: none;
+  background: #404040;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #d4d4d4;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+textarea::placeholder {
+  color: #d4d4d4;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+input.web {
+  width: 100%;
+  padding: 12px 32px;
+  border-radius: 8px;
+  background: linear-gradient(to right, #BC8EF8, #3DABBE);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-color: transparent;
+}
+
+.ContactInfo {
+  /* padding-top: 16px; */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: wrap;
+}
+
+.LiveMap {
+  width: 100%;
+  /* max-width: 400px; */
+}
+
+.ContactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ContactDetails .Detail {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #fff;
+}
+
+.ContactDetails .Detail h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
+
+/*##################### FOOTER ########################*/
+footer {
+  background: #262626;
+  padding: 40px 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+footer hr {
+  width: 100vw;
+  /* margin-top: 40px; */
+}
+
+footer .footerRow {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  align-items: center;
+}
+
+footer .copyright {
+  padding: 40px 0;
+}
+
+footer .copyright h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+
+footer .designer h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+
+footer .socials {
+  display: flex;
+  gap: 16px;
+}
+
+footer .socials a {
+  color: #fff;
+}
