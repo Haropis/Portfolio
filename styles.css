@@ -1,0 +1,306 @@
+/*#################### IMPORTED FONTS #####################*/
+/* ############ Inter ############## */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* ############ Raleway ############## */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ############ Alike ############## */
+@import url("https://fonts.googleapis.com/css2?family=Alike&display=swap");
+
+/*##################### DEFAULTS ########################*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  background: #f9f9f9;
+  margin: 0;
+  /* line-height: 1; */
+  font-size: medium;
+}
+
+nav,
+header,
+footer {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ############ BUTTONS ############## */
+button.web {
+  padding: 16px 32px;
+  border-radius: 8px;
+  background: linear-gradient(to right, #BC8EF8, #3DABBE);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-color: transparent;
+  /* transition: all 0.3s ease; */
+}
+
+button.web:hover {
+  padding: 16px 32px;
+  border-radius: 8px;
+  /* background: linear-gradient(to left, #BC8EF8, #3DABBE); */
+  background:#1f7fd8;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-color: transparent;
+  /* transition: all 0.3s ease; */
+  }
+
+/* ############ SECTION HEADERs ############## */
+.SectionHeader {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  gap: 12px;
+  text-align: center;
+  justify-content: center;
+  padding: 40px;
+  color: #fff;
+}
+
+.SectionHeader h1 {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+.SectionHeader h2 {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+/*##################### NAVIGATION BAR ########################*/
+nav {
+  width: 100%;
+  display: flex;
+  padding: 20px 120px;
+  overflow: hidden;
+  background: #f5f5f5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+}
+
+nav ul li {
+  list-style: none;
+  height: 100%;
+}
+
+nav ul li a {
+  color: #1f1f1f;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #1f7fd8;
+}
+
+nav ul li a.active {
+  color: #1f7fd8;
+}
+
+/*##################### HERO SECTION ########################*/
+.hero {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/HeroImg.jpg");
+  padding: 120px;
+  color: #fff;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-text {
+  width: 100%;
+  max-width: 960px;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+
+.hero-text p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  line-height: 32px;
+  font-family: "Inter", sans-serif;
+}
+
+/*##################### PORTFOLIO SECTION ########################*/
+.PortfolioPreview {
+  background: #262626;
+  padding: 40px 0;
+}
+
+.PortfolioGrid {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  overflow: wrap;
+}
+
+.PortfolioGrid .PortfolioItem {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.PortfolioGrid .PortfolioItem:hover {
+  transform: translateY(-5px);
+}
+
+.PortfolioGrid .PortfolioItem .PortfolioImage {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.PortfolioGrid .PortfolioItem h2 {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+
+.PortfolioGrid .PortfolioItem h4 {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*##################### EXPERIENCE SECTION ########################*/
+.ExperiencePreview {
+  background: #262626;
+  padding: 40px 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.ExperienceGrid {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  overflow: wrap;
+}
+
+.ExperienceItem {
+  width: 100%;
+  padding: 24px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: left;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+  transition: all 0.3s ease;
+  color: #fff;
+  background: #404040;
+}
+
+.ExperienceItem .Timeframe {
+font-size: 20px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+}
+
+.ExperienceItem .Role {
+font-size: 24px;
+font-weight: 600;
+line-height:32px;
+text-align: left;
+color: #1f7fd8
+}
+
+.ExperienceItem .Description {
+font-size: 16px;
+font-weight: 300;
+line-height: 24px;
+height: 120px;
+text-align: left;
+}
+
+.ExperienceItem .Company {
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+height: 50px;
+color: #d4d4d4;
+}
+
+.ExperiencePreview .web {
+  margin-top: 80px;
+}
+
+
+/*##################### CONTACT SECTION ########################*/
+.ContactPreview {
+  background: #262626;
+  padding: 40 px 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
