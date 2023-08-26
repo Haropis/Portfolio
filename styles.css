@@ -43,7 +43,7 @@ img {
 .web {
   padding: 16px 32px;
   border-radius: 8px;
-  background: linear-gradient(to right, #BC8EF8, #3DABBE);
+  background: linear-gradient(to right, #bc8ef8, #3dabbe);
   color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -56,14 +56,14 @@ img {
   /* padding: 16px 32px;
   border-radius: 8px; */
   /* background: linear-gradient(to left, #BC8EF8, #3DABBE); */
-  background:#1f7fd8;
+  background: #1f7fd8;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
   border-color: transparent;
   /* transition: all 0.3s ease; */
-  }
+}
 
 /* ############ SECTION HEADERs ############## */
 .SectionHeader {
@@ -258,45 +258,44 @@ nav ul li a.active {
   background: #404040;
 }
 
-.PortfolioGrid .PortfolioItem:hover {
+.ExperienceGrid .ExperienceItem:hover {
   transform: translateY(-8px);
 }
 
 .ExperienceItem .Timeframe {
-font-size: 20px;
-font-weight: 500;
-line-height: 24px;
-text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
 }
 
 .ExperienceItem .Role {
-font-size: 24px;
-font-weight: 600;
-line-height:32px;
-text-align: left;
-color: #1f7fd8
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  color: #1f7fd8;
 }
 
 .ExperienceItem .Description {
-font-size: 16px;
-font-weight: 300;
-line-height: 24px;
-height: 120px;
-text-align: left;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  height: 120px;
+  text-align: left;
 }
 
 .ExperienceItem .Company {
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-height: 50px;
-color: #d4d4d4;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  height: 50px;
+  color: #d4d4d4;
 }
 
 .ExperiencePreview .web {
   margin-top: 80px;
 }
-
 
 /*##################### CONTACT SECTION ########################*/
 .ContactPreview {
@@ -329,10 +328,12 @@ label {
   color: #fff;
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"],
+input[type="email"],
+textarea {
   width: 100%;
   padding: 16px 24px;
-  margin: 8px 0 24px 0;  
+  margin: 8px 0 24px 0;
   border: transparent;
   border-radius: 4px;
   resize: none;
@@ -342,14 +343,14 @@ input[type="text"], input[type="email"], textarea {
 
 input::placeholder {
   color: #d4d4d4;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
   font-size: 14px;
 }
 
 textarea::placeholder {
   color: #d4d4d4;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
   font-size: 14px;
 }
@@ -358,7 +359,7 @@ input.web {
   width: 100%;
   padding: 12px 32px;
   border-radius: 8px;
-  background: linear-gradient(to right, #BC8EF8, #3DABBE);
+  background: linear-gradient(to right, #bc8ef8, #3dabbe);
   color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -393,12 +394,10 @@ input.web {
 }
 
 .ContactDetails .Detail h4 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
-
 }
-
 
 /*##################### FOOTER ########################*/
 footer {
@@ -426,14 +425,14 @@ footer .copyright {
 }
 
 footer .copyright h4 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 300;
   color: #fff;
 }
 
 footer .designer h4 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 300;
   color: #fff;
