@@ -414,7 +414,6 @@ input.btn {
   justify-content: center;
   display: flex;
   gap: 40px;
-  padding: 0 40px;
 }
 
 .footer .copyright h4 {
