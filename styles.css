@@ -92,40 +92,43 @@ img {
 /*##################### NAVIGATION BAR ########################*/
 nav {
   width: 100%;
-  display: flex;
-  padding: 20px 120px;
-  overflow: hidden;
-  background: #dbdbdb;
+  margin: 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  justify-content: center;
-  align-items: center;
 }
 
 nav ul {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 80px;
+  background: #dbdbdb;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px 120px;
 }
 
-nav ul li .breadCrumb {
+ul.navbar li {
+  list-style: none;
+  /* height: 100%; */
+}
+
+ul.navbar li.menu-bar {
   display: none;
 }
 
-nav ul li {
-  list-style: none;
-  height: 100%;
-}
-
-nav ul li a {
+ul.navbar li a {
+  display: block;
   color: #1f1f1f;
   font-size: 16px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
-nav ul li a:hover {
+ul.navbar li a:hover {
   color: #1f7fd8;
 }
 
-nav ul li a.active {
+ul.navbar li a.active {
   color: #1f7fd8;
 }
 
@@ -451,131 +454,47 @@ input.btn {
   /* ############ Alike ############## */
   @import url("https://fonts.googleapis.com/css2?family=Alike&display=swap");
 
-  /*##################### DEFAULTS ########################*/
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: "Inter", sans-serif;
-    min-height: 100vh;
-    background: #262626;
-    margin: 0;
-    font-size: medium;
-    overflow: scroll;
-  }
-
-  nav,
-  header,
-  footer {
-    display: block;
-  }
-
-  a {
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  /* ############ BUTTONS ############## */
-  .btn {
-    padding: 8px 20px;
-    border-radius: 8px;
-    background: linear-gradient(to right, #bc8ef8, #3dabbe);
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    border-color: transparent;
-    /* transition: all 0.3s ease; */
-  }
-
-  .btn:hover {
-    background: #1f7fd8;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    border-color: transparent;
-    /* transition: all 0.3s ease; */
-  }
-
-  /* ############ SECTION HEADERs ############## */
-  .section-header {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    gap: 12px;
-    text-align: center;
-    justify-content: center;
-    padding: 40px;
-    color: #fff;
-  }
-
-  .section-header h1 {
-    font-size: 24px;
-    font-weight: 900;
-    margin-bottom: 20px;
-    font-family: "Raleway", sans-serif;
-  }
-
-  .section-header h2 {
-    font-size: 24px;
-    font-weight: 300;
-    margin-bottom: 20px;
-    font-family: "Inter", sans-serif;
-  }
-
   /*##################### NAVIGATION BAR ########################*/
-  nav {
-    width: 100%;
-    max-width: 680px;
-    height: 60px;
-    /* display: flex; */
-    /* padding: 20px 0px; */
-    overflow: hidden;
-    background: #dbdbdb;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-    align-items: center;
-  }
 
   nav ul {
-    display: flex;
-    gap: 80px;
-    align-items: right;
-  }
-
-  nav ul li:not(:last-child) {
-    list-style: none;
-  }
-  nav ul li .breadCrumb {
     display: block;
-    float: right;
-    position: static;
-    font-size: 24px;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: right;
+    padding: 16px 24px;
+    /* height: 48px; */
   }
 
-  nav ul li a {
-    color: #1f1f1f;
-    font-size: 16px;
-    font-weight: 500;
+  ul.navbar li:not(:nth-child(1)) {
     display: none;
   }
 
-  nav ul li a:hover {
-    color: #1f7fd8;
+  ul.navbar li.menu-bar {
+    display: block;
+    float: right;
   }
 
-  nav ul li a.active {
-    color: #1f7fd8;
+  /* ul.navbar.responsive li.menu-bar {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+  } */
+
+  ul.navbar.responsive {
+    position: relative;
   }
+
+  ul.navbar.responsive li {
+    display: inline;
+    float: none;
+  }
+
+  ul.navbar.responsive li a {
+    display: block;
+    text-align: right;
+    line-height: 32px;
+  }
+
 
   /*##################### HERO SECTION ########################*/
   .hero {
