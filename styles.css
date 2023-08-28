@@ -40,7 +40,7 @@ img {
 }
 
 /* ############ BUTTONS ############## */
-.web {
+.btn {
   padding: 16px 32px;
   border-radius: 8px;
   background: linear-gradient(to right, #bc8ef8, #3dabbe);
@@ -52,10 +52,7 @@ img {
   /* transition: all 0.3s ease; */
 }
 
-.web:hover {
-  /* padding: 16px 32px;
-  border-radius: 8px; */
-  /* background: linear-gradient(to left, #BC8EF8, #3DABBE); */
+.btn:hover {
   background: #1f7fd8;
   color: #fff;
   font-size: 16px;
@@ -66,7 +63,7 @@ img {
 }
 
 /* ############ SECTION HEADERs ############## */
-.SectionHeader {
+.section-header {
   width: 100%;
   max-width: 960px;
   margin: auto;
@@ -78,14 +75,14 @@ img {
   color: #fff;
 }
 
-.SectionHeader h1 {
+.section-header h1 {
   font-size: 32px;
   font-weight: 900;
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
 }
 
-.SectionHeader h2 {
+.section-header h2 {
   font-size: 32px;
   font-weight: 300;
   margin-bottom: 20px;
@@ -107,6 +104,10 @@ nav {
 nav ul {
   display: flex;
   gap: 80px;
+}
+
+nav ul li .breadCrumb {
+  display: none;
 }
 
 nav ul li {
@@ -156,26 +157,26 @@ nav ul li a.active {
 }
 
 .hero-text h1 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 600;
   font-family: "Inter", sans-serif;
 }
 
 .hero-text p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   margin-bottom: 40px;
   line-height: 32px;
-  font-family: "Inter", sans-serif;
+  font-family: "Open-sans", sans-serif;
 }
 
 /*##################### PORTFOLIO SECTION ########################*/
-.PortfolioPreview {
+.portfolio-preview {
   background: #262626;
   padding: 40px 0;
 }
 
-.PortfolioGrid {
+.portfolio-grid {
   width: 100%;
   max-width: 960px;
   margin: auto;
@@ -185,7 +186,7 @@ nav ul li a.active {
   overflow: wrap;
 }
 
-.PortfolioGrid .PortfolioItem {
+.portfolio-grid .portfolio-item {
   width: 100%;
   border-radius: 5px;
   overflow: hidden;
@@ -197,25 +198,25 @@ nav ul li a.active {
   color: #fff;
 }
 
-.PortfolioGrid .PortfolioItem:hover {
+.portfolio-grid .portfolio-item:hover {
   transform: translateY(-8px);
 }
 
-.PortfolioGrid .PortfolioItem .PortfolioImage {
+.portfolio-grid .portfolio-item .portfolio-image {
   width: 100%;
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 16px;
 }
 
-.PortfolioGrid .PortfolioItem h2 {
+.portfolio-grid .portfolio-item h2 {
   font-size: 20px;
   font-weight: 300;
   line-height: 24px;
   text-align: center;
 }
 
-.PortfolioGrid .PortfolioItem h4 {
+.portfolio-grid .portfolio-item h4 {
   font-size: 14px;
   font-weight: 300;
   line-height: 16px;
@@ -224,7 +225,7 @@ nav ul li a.active {
 }
 
 /*##################### EXPERIENCE SECTION ########################*/
-.ExperiencePreview {
+.experience-preview {
   background: #262626;
   padding: 40px 0;
   align-items: center;
@@ -233,7 +234,7 @@ nav ul li a.active {
   gap: 0px;
 }
 
-.ExperienceGrid {
+.experience-grid {
   width: 100%;
   max-width: 960px;
   margin: auto;
@@ -243,7 +244,7 @@ nav ul li a.active {
   overflow: wrap;
 }
 
-.ExperienceItem {
+.experience-item {
   width: 100%;
   padding: 24px;
   border-radius: 12px;
@@ -258,18 +259,18 @@ nav ul li a.active {
   background: #404040;
 }
 
-.ExperienceGrid .ExperienceItem:hover {
+.experience-grid .experience-item:hover {
   transform: translateY(-8px);
 }
 
-.ExperienceItem .Timeframe {
+.experience-item .timeframe {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   text-align: left;
 }
 
-.ExperienceItem .Role {
+.experience-item .role {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -277,7 +278,7 @@ nav ul li a.active {
   color: #1f7fd8;
 }
 
-.ExperienceItem .Description {
+.experience-item .description {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -285,7 +286,7 @@ nav ul li a.active {
   text-align: left;
 }
 
-.ExperienceItem .Company {
+.experience-item .company {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -293,12 +294,12 @@ nav ul li a.active {
   color: #d4d4d4;
 }
 
-.ExperiencePreview .web {
+.experience-preview .btn {
   margin-top: 80px;
 }
 
 /*##################### CONTACT SECTION ########################*/
-.ContactPreview {
+.contact-preview {
   background: #262626;
   padding: 40px 0;
   align-items: center;
@@ -306,7 +307,7 @@ nav ul li a.active {
   flex-direction: column;
 }
 
-.ContactGrid {
+.contact-grid {
   width: 100%;
   max-width: 960px;
   margin: auto;
@@ -316,7 +317,7 @@ nav ul li a.active {
   overflow: wrap;
 }
 
-.ContactForm form {
+.contact-form form {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -355,7 +356,7 @@ textarea::placeholder {
   font-size: 14px;
 }
 
-input.web {
+input.btn {
   width: 100%;
   padding: 12px 32px;
   border-radius: 8px;
@@ -367,7 +368,7 @@ input.web {
   border-color: transparent;
 }
 
-.ContactInfo {
+.contact-info {
   /* padding-top: 16px; */
   display: flex;
   flex-direction: column;
@@ -375,25 +376,32 @@ input.web {
   overflow: wrap;
 }
 
-.LiveMap {
+.livemap {
   width: 100%;
   /* max-width: 400px; */
 }
 
-.ContactDetails {
+.contact-details {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.ContactDetails .Detail {
+.contact-details .detail {
   display: flex;
   gap: 8px;
   align-items: center;
   color: #fff;
 }
 
-.ContactDetails .Detail h4 {
+.contact-details .detail a {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #fff;
+}
+
+.contact-details .detail h4 {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -413,7 +421,7 @@ footer hr {
   /* margin-top: 40px; */
 }
 
-footer .footerRow {
+footer .footer-row {
   display: flex;
   justify-content: space-between;
   width: 960px;
@@ -445,4 +453,313 @@ footer .socials {
 
 footer .socials a {
   color: #fff;
+}
+
+/* ################### RESPONSIVENESS - MOBILE #################### */
+@media screen and (max-width: 680px) {
+  /*#################### IMPORTED FONTS #####################*/
+  /* ############ Inter ############## */
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+  /* ############ Raleway ############## */
+  @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+  /* ############ Alike ############## */
+  @import url("https://fonts.googleapis.com/css2?family=Alike&display=swap");
+
+  /*##################### DEFAULTS ########################*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    background: #262626;
+    margin: 0;
+    font-size: medium;
+    overflow: scroll;
+  }
+
+  nav,
+  header,
+  footer {
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  /* ############ BUTTONS ############## */
+  .btn {
+    padding: 8px 20px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #bc8ef8, #3dabbe);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-color: transparent;
+    /* transition: all 0.3s ease; */
+  }
+
+  .btn:hover {
+    background: #1f7fd8;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-color: transparent;
+    /* transition: all 0.3s ease; */
+  }
+
+  /* ############ SECTION HEADERs ############## */
+  .section-header {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    gap: 12px;
+    text-align: center;
+    justify-content: center;
+    padding: 40px;
+    color: #fff;
+  }
+
+  .section-header h1 {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .section-header h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+  }
+
+  /*##################### NAVIGATION BAR ########################*/
+  nav {
+    width: 100%;
+    max-width: 680px;
+    height: 60px;
+    /* display: flex; */
+    /* padding: 20px 0px; */
+    overflow: hidden;
+    background: #dbdbdb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 80px;
+    align-items: right;
+  }
+
+  nav ul li:not(:last-child) {
+    list-style: none;
+  }
+  nav ul li .breadCrumb {
+    display: block;
+    float: right;
+    position: static;
+    font-size: 24px;
+  }
+
+  nav ul li a {
+    color: #1f1f1f;
+    font-size: 16px;
+    font-weight: 500;
+    display: none;
+  }
+
+  nav ul li a:hover {
+    color: #1f7fd8;
+  }
+
+  nav ul li a.active {
+    color: #1f7fd8;
+  }
+
+  /*##################### HERO SECTION ########################*/
+  .hero {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("assets/HeroImg.jpg");
+    padding: 80px;
+    color: #fff;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    line-height: 24px;
+    font-family: "Open-sans", sans-serif;
+  }
+
+  /*##################### PORTFOLIO SECTION ########################*/
+  .portfolio-preview {
+    background: #262626;
+    padding: 16px 0;
+    overflow: hidden;
+  }
+
+  .portfolio-grid {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    overflow: wrap;
+  }
+
+  .portfolio-grid .portfolio-item {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    transition: all 0.3s ease;
+    color: #fff;
+  }
+
+  .portfolio-grid .portfolio-item:hover {
+    transform: translateY(-8px);
+  }
+
+  .portfolio-grid .portfolio-item .portfolio-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+
+  .portfolio-grid .portfolio-item h2 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .portfolio-grid .portfolio-item h4 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  /*##################### EXPERIENCE SECTION ########################*/
+  .experience-preview {
+    background: #262626;
+    padding: 40px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .experience-grid {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    overflow: wrap;
+  }
+
+  .experience-item {
+    width: 100%;
+    padding: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: left;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+    transition: all 0.3s ease;
+    color: #fff;
+    background: #404040;
+  }
+
+  .experience-grid .experience-item:hover {
+    transform: translateY(-8px);
+  }
+
+  .experience-item .timeframe {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .experience-item .role {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #1f7fd8;
+  }
+
+  .experience-item .description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    height: 120px;
+    text-align: left;
+  }
+
+  .experience-item .company {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    height: 50px;
+    color: #d4d4d4;
+  }
+
+  .experience-preview .btn {
+    margin-top: 80px;
+  }
 }
