@@ -135,8 +135,7 @@ nav ul li a.active {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("assets/HeroImg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/HeroImg.jpg");
   padding: 120px;
   color: #fff;
 
@@ -585,8 +584,7 @@ input.btn {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("assets/HeroImg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/HeroImg.jpg");
     padding: 40px;
     color: #fff;
 
